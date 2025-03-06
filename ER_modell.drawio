@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="48WFvEwgLHSlUKScSLO7" name="Page-1">
-        <mxGraphModel dx="2658" dy="2332" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+        <mxGraphModel dx="1729" dy="1407" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -142,9 +142,6 @@
                 </mxCell>
                 <mxCell id="55" value="Ukedagskode" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
                     <mxGeometry x="-60" y="120" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="64" value="SerieNr er unikt innen det selskapet&lt;div&gt;som produserer flyet.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="-170" y="-545" width="210" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="65" value="(1,n)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="-165" y="-95" width="50" height="30" as="geometry"/>

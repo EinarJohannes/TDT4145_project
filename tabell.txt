@@ -1,33 +1,66 @@
-Kunde(KUNDENR, Navn, Tlf, Epost, Nasjonalitet)
+Kunde(KUNDENR, Navn, Tlf, Epost, Nasjonalitet, Innsjekkingstidspunkt)
     -KUNDENR er primærnøkkel
-Køptbillett (KUNDENR, REFERANSENR)
+Køptbillett (KUNDENR, REFERANSENR)  %% Denne er ikke nødvendig da det er (1,1) relasjon fra billett mot kunde
     -KUNDENR er fremmednøkkel til primærnøkkel i Kunde-tabellen, kan ikke ha NULL-verdi
     -REFERANSENR  er fremmednøkkel til primærnøkkel i Billett-tabellen, kan ikke har NULL-verdi
     -De to utgjør til sammen en primærnøkkel
-Billett (REFERANSENR, Prisklasse, Pris, Setevalg, ReiseFra, ReiseTil)
+Billett (REFERANSENR, Kundenr, Løpenr, Prisklasse, Pris, Setevalg, ReiseFra, ReiseTil, Reisetype)
     -REFERANSENR er primærnøkkel
+    -Kundenr er fremmednøkkel mot Kunde, kan ikke være NULL
+    -Løpenr er fremmednøkkel mot Flyvning, kan være NULL
+Bagasje (Registreringsnr, Billettreferanse,  Vekt, Innleveringstidspunkt)
+    -Registreringsnr er primærnøkkel
+    -Billettreferanse er fremmednøkkel mot Billett      
 Flyvning (LØPENR, Status, FaktiskAvgang, FaktiskAnkomst)
     -LØPENR er primærnøkkel
-FLyvningHarBillett (LØPENR, REFERANSENR)
+FLyvningHarBillett (LØPENR, REFERANSENR) %% Denne er unødvendig da Billett har (0,1) kardinalitet mot Flyvning
     -LØPENR er fremmednøkkel til primærnøkkel LØPENR i flyvning-tabellen, kan ikke har NULL-verdi
     -REFERANSENR er fremmednøkkel til primærnøkkel REFERANSENR i Billett-tabellen, kan ikke ha NULL-verdi
     -De to fremmednøklene utgjør til sammen en primærnøkkel
-Flyrute (FLYRUTENR, Ukedagskode)
+Flyrute (FLYRUTENR, FlytypeID, FlyselskapID, Ukedagskode)
     -FLYRUTENR er primærnøkkel
-HarFlyvning (LØPENR, FLYRUTENR)
+    -FlytypeID er fremmednøkkel mon flytype, kan ikke være NULL
+    -FlyselskapID er fremmednøkkel mot flyselskap, kan ikke være NULL
+HarFlyvning (LØPENR, FLYRUTENR) %% Denne er unødvendig da det er (1,1) kardinalitet fra Flyvning mot Flyrute
     -LØPENR er fremmednøkkel til Flyvning-tabellen, kan ikke ha NULL-verdi
     -FLYRUTENR er fremmednøkkel til FLyrute-tabellen, kan ikke ha NULL-verdi
     -De to utgjør til sammmen en primærnøkkel
-Delrute (DELRUTEID, PlanlagtAvgang, PlanlagtAnkomst)
+Delrute (DELRUTEID, FlyplasskodeAvgang, FlyplasskodeAnkomst, PlanlagtAvgang, PlanlagtAnkomst)
     -DELRUTEID ER primærnøkkel
+    -FlyplasskodeAvgang er fremmednøkkel mot Flyplass, kan være NULL ?
+    -FlyplasskodeAnkomst er fremmednøkkel mot Flyplass, kan være NULL ? 
 Flyplass (FLYPLASSKODE, Flyplassnavn)
     -FLYPLASSKODE er primærnøkkel
-HarAvgang(FLYPLASSKODE, DELRUTEID)
+HarAvgang(FLYPLASSKODE, DELRUTEID) %% Denne er ikke nødvendig
     -FLYPLASSKODE  er fremmednøkkel mot FLYPLASSKODE i Flyplass-tabellen
     -DELRUTEID er fremmednøkkel mot DELRUTEID i Delrute-tabellen
     -De to utgjør til sammen en primærnøkkel
+Fly (RegNr, FlytypeID, Produsentnavn, FlyselskapID, SerieNr, Navn, ÅrSattIDrift)
+    -RegNr er primærnøkkel
+    -FlytypeID er fremmednøkkel mot Flytype, kan ikke være NULL
+    -Produsentnavn er fremmednøkkel mot Produsent, kan ikke være NULL
+    -FlyselskapID er fremmednøkkel mot flyselskap, kan ikke være NULL
+Flytype (FlytypeID, Produsentnavn, Kabinkode, FlyselskapID, ProdusertFra, ProdusertTil)
+    -FlytypeID er primærnøkkel
+    -Produsentnavn er fremmednøkkel mot Produsent, kan ikke være NULL
+    -Kabinkode er fremmednøkkel mot Passasjerkabin, kan ikke være NULL
+    -FlyselskapID er fremmednøkkel mot Flyselskap
+Passasjerkabin (Kabinkode)
+    -Kabinkode er primærnøkkel
+Seterad (Setekonfigurasjon, Merknad)
+    -Setekonfigurasjon, Kabinkode utgør primærnøkkel %% Tror vi må få inn Radnummer her tror jeg for å sørge for integriteten.
+HarRader (Kabinkode, Setekonfigurasjon, Radnummer)
+    -Kabinkode er fremmednøkkel mot Passasjerkabin
+    -Setekonfigurasjon er fremmednøkkel mot Seterad
+    -%% Alle tre attributter må sammen være identifiserende tror jeg
+Fordelsprogram (ReferanseID, FlyselskapID, Kundenr, Nivå)
+    -ReferanseID er primærnøkkel
+    -FlyselskapID er fremmednøkkel mot Flyselskap, kan ikke være NULL
+    -Kundenr er fremmedmnøkkel mot Kunde, kan være NULL
 HarDelrute (DELRUTEID, FLYRUTENR)
     -DELRUTEID er fremmednøkkel mot DELRUTEID i Delrute-tabellen
     -FLYRUTENR er fremmednøkkel mot FLYRUTENR i FLyrute-tabellen
-    -De to utgjør til sammen en primærnøkkel
-    
+    -De to utgjør til sammen en primærnøkkel %% Tror ikke dette skal spesifiseres
+BenytterFlytype (FlytypeID, FlyselskapID)
+    -FlytypeID er fremmednøkkel mot Flytype, kan ikke være NULL
+    -FlyselskapID er fremmednøkkel mot Flytype, kan ikke være NULL

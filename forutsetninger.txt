@@ -3,7 +3,7 @@ Forutsetninger til ER modell
 - Entiteten Fly har en unikt identifiserende nøkkelatributt RegNr og et SerieNr som kun er unik for produsenten av et fly. Derfor er SerieNr satt som en normal attributt og det forutsettes at unikheten til dette attributtet opprettholdes i implementasjonen av databasen ved en unik begrensning.  
 - Entiteten Flyplass har Flyplasskoden som primærnøkkel og Flyplassnavn som normalattributt. Sistnevnte skal være unik og må implementeres med en begrensning.
 - Flyvning faktisk ankomst og avgang, hvordan løser vi dette?
-- For å gjøre en billettbestilling ti len flyvning må status være "planned" som vi forutsetter kan legges inn som en begrensning i oppretningen av databasen. 
+- For å gjøre en billettbestilling til en flyvning må status være "planned" som vi forutsetter kan legges inn som en begrensning i oppretningen av databasen. 
 - Dersom en flyrute består av to eller flere delruter, kan man kjøpe delrutene for seg. Hver delrute vil da ha en pris. Prisen på hele flyruten vil være
 mindre enn summen av prisen på alle delrutene. 
-- Det er noen forutsetninger å gjøre mtp billettkjøp: En billett kan gjelde for enten hele flyruten eller en delrute. En spesifikk billett kan ikke eksistere uten at den er kjøpt. Et setevalg må holdes unikt for 
+- Billett kan gjelde for enten hele flyruten eller en delrute. En spesifikk billett kan ikke eksistere uten at den er kjøpt. Et setevalg må holdes unikt for en flyvning og dette må opprettholdes med en begrensning i databasen.

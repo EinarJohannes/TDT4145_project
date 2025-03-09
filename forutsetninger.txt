@@ -6,4 +6,4 @@ Forutsetninger til ER modell
 - For å gjøre en billettbestilling til en flyvning må status være "planned" som vi forutsetter kan legges inn som en begrensning i oppretningen av databasen. 
 - Dersom en flyrute består av to eller flere delruter, kan man kjøpe delrutene for seg. Hver delrute vil da ha en pris. Prisen på hele flyruten vil være
 mindre enn summen av prisen på alle delrutene. 
-- Billett kan gjelde for enten hele flyruten eller en delrute. En spesifikk billett kan ikke eksistere uten at den er kjøpt. Et setevalg må holdes unikt for en flyvning og dette må opprettholdes med en begrensning i databasen.
+- En billett kan gjelde for enten hele flyruten, en delrute eller flere delruter. En spesifikk billett kan ikke eksistere uten at den er kjøpt. Et setevalg må holdes unikt for en flyvning og dette må opprettholdes med en begrensning i databasen.

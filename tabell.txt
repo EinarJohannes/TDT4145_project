@@ -1,0 +1,33 @@
+Kunde(KUNDENR, Navn, Tlf, Epost, Nasjonalitet)
+    -KUNDENR er primærnøkkel
+Køptbillett (KUNDENR, REFERANSENR)
+    -KUNDENR er fremmednøkkel til primærnøkkel i Kunde-tabellen, kan ikke ha NULL-verdi
+    -REFERANSENR  er fremmednøkkel til primærnøkkel i Billett-tabellen, kan ikke har NULL-verdi
+    -De to utgjør til sammen en primærnøkkel
+Billett (REFERANSENR, Prisklasse, Pris, Setevalg, ReiseFra, ReiseTil)
+    -REFERANSENR er primærnøkkel
+Flyvning (LØPENR, Status, FaktiskAvgang, FaktiskAnkomst)
+    -LØPENR er primærnøkkel
+FLyvningHarBillett (LØPENR, REFERANSENR)
+    -LØPENR er fremmednøkkel til primærnøkkel LØPENR i flyvning-tabellen, kan ikke har NULL-verdi
+    -REFERANSENR er fremmednøkkel til primærnøkkel REFERANSENR i Billett-tabellen, kan ikke ha NULL-verdi
+    -De to fremmednøklene utgjør til sammen en primærnøkkel
+Flyrute (FLYRUTENR, Ukedagskode)
+    -FLYRUTENR er primærnøkkel
+HarFlyvning (LØPENR, FLYRUTENR)
+    -LØPENR er fremmednøkkel til Flyvning-tabellen, kan ikke ha NULL-verdi
+    -FLYRUTENR er fremmednøkkel til FLyrute-tabellen, kan ikke ha NULL-verdi
+    -De to utgjør til sammmen en primærnøkkel
+Delrute (DELRUTEID, PlanlagtAvgang, PlanlagtAnkomst)
+    -DELRUTEID ER primærnøkkel
+Flyplass (FLYPLASSKODE, Flyplassnavn)
+    -FLYPLASSKODE er primærnøkkel
+HarAvgang(FLYPLASSKODE, DELRUTEID)
+    -FLYPLASSKODE  er fremmednøkkel mot FLYPLASSKODE i Flyplass-tabellen
+    -DELRUTEID er fremmednøkkel mot DELRUTEID i Delrute-tabellen
+    -De to utgjør til sammen en primærnøkkel
+HarDelrute (DELRUTEID, FLYRUTENR)
+    -DELRUTEID er fremmednøkkel mot DELRUTEID i Delrute-tabellen
+    -FLYRUTENR er fremmednøkkel mot FLYRUTENR i FLyrute-tabellen
+    -De to utgjør til sammen en primærnøkkel
+    

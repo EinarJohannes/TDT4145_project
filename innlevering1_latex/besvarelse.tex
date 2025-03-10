@@ -32,12 +32,13 @@
 
 %Begynnelsen av dokumentet
 \begin{document}
-\title{TDT4145, Project Part 1}
+\title{TDT4145, Prosjekt del 1}
 \author{Erik Dudek, Einar Rye, Ida Høyland}
 \maketitle
 
-%Innholdsfortegnelse:
-\tableofcontents{}
+%Innholdsfortegnelse som heter innholdsfortegnelse:
+\tableofcontents
+
 
 \newpage{}
 
@@ -61,7 +62,8 @@ mindre enn summen av prisen på alle delrutene.
 
 \newpage{}
 
-\section{Task 1b}
+\section{Oppgave 1b}
+\subsection{Tabellene}
 
 %Punktliste med underpunkter etter hovedpunkt:
 \begin{itemize}
@@ -72,7 +74,7 @@ mindre enn summen av prisen på alle delrutene.
 \item Billettreferanse er fremmednøkkel mot Billett, kan ikke være NULL
 \end{itemize}
 
-\item Bagasje (FlytypeID, FLyselskapID)
+\item BenytterFlytype (FlytypeID, FLyselskapID)
 \begin{itemize}
 \item FlytypeID er fremmednøkkel mot Flytype, kan ikke være NULL
 \item FlyselskapID er fremmednøkkel mot FLytype, kan ikke være NULL
@@ -100,7 +102,7 @@ mindre enn summen av prisen på alle delrutene.
 \item Produsentnavt er fremmednøkkel mot Produsent, kan ikke være NULL
 \end{itemize}
 
-\item Flyplass (Plyplasskode, Flyplassnavn)
+\item Flyplass (Flyplasskode, Flyplassnavn)
 \begin{itemize}
 \item Flyplasskode er primærnøkkel
 \end{itemize}
@@ -155,10 +157,18 @@ mindre enn summen av prisen på alle delrutene.
 \item Seterad (Setekonfigurasjon, Radnr, Kabinkode, Merknad)
 \begin{itemize}
 \item Setekonfigurasjon, Radnr er delvis nøkkel
-\item kabinkode, Setekonfigurasjon, Radnr utgjør primærnøkkel
-\item kabinkode er fremmednøkkel mot Passasjerkabin 
+\item Kabinkode, Setekonfigurasjon, Radnr utgjør primærnøkkel
+\item Kabinkode er fremmednøkkel mot Passasjerkabin 
 \end{itemize}
 
 \end{itemize}
+
+\subsection{Normalformer}
+Alle tabellene er i fjerde normalform (4FN) siden det ikke finnes
+multiverdige avhengigheter i noen av tabellene. Det fremkommer fra definisjonene
+av normalformer, at dersom en tabell er i 4NF, så er den også i 3NF, 2NF og 1NF.
+Det er fordi kriteriene som ligger til grunn for normalform $n$, kan betraktes
+som en delmengde av kriteriene for normalform $(n-1), (n-2), \ldots, 1, \quad \forall
+n \in \{2,3,4\}$
 
 \end{document}

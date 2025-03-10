@@ -13,6 +13,16 @@ INPUT c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
+INPUT c:/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
+INPUT c:/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
+INPUT c:/texlive/2023/texmf-dist/tex/generic/babel/txtbabel.def
+INPUT c:/texlive/2023/texmf-dist/tex/generic/babel-norsk/norsk.ldf
+INPUT c:/texlive/2023/texmf-dist/tex/generic/babel-norsk/norsk.ldf
+INPUT c:/texlive/2023/texmf-dist/tex/generic/babel-norsk/norsk.ldf
+INPUT c:/texlive/2023/texmf-dist/tex/generic/babel/locale/no/babel-norsk.tex
+INPUT c:/texlive/2023/texmf-dist/tex/generic/babel/locale/no/babel-norsk.tex
+INPUT c:/texlive/2023/texmf-dist/tex/generic/babel/locale/no/babel-norsk.tex
+INPUT c:/texlive/2023/texmf-dist/tex/generic/babel/locale/no/babel-no.ini
 INPUT c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty

@@ -363,9 +363,13 @@ INPUT C:\Users\einar\OneDrive\Skrivebord\downloads\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\einar\OneDrive\Skrivebord\downloads\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\einar\OneDrive\Skrivebord\downloads\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\einar\OneDrive\Skrivebord\downloads\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\einar\OneDrive\Skrivebord\downloads\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT .\besvarelse.toc
+INPUT .\besvarelse.toc
+INPUT besvarelse.toc
 INPUT C:\Users\einar\OneDrive\Skrivebord\downloads\fonts\tfm\public\cm\cmbx12.tfm
+OUTPUT besvarelse.toc
 INPUT C:\Users\einar\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\einar\OneDrive\Skrivebord\downloads\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT besvarelse.aux
 INPUT .\besvarelse.out
 INPUT .\besvarelse.out

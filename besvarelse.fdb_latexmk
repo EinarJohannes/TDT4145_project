@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1741599379.73355 "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/besvarelse.tex" "besvarelse.pdf" "besvarelse" 1741599382.7959 0
+["pdflatex"] 1741601347.69618 "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/besvarelse.tex" "besvarelse.pdf" "besvarelse" 1741601351.13433 0
   "C:/Users/einar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1741599048 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/einar/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1741599243 14064 4f68f4ac0f56a0c15a1b171124e39a9d ""
   "C:/Users/einar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1740049333 24225046 4bb43facef80bc4c523ae950015c0e7b ""
@@ -206,13 +206,15 @@
   "C:/Users/einar/OneDrive/Skrivebord/downloads/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "C:/Users/einar/OneDrive/Skrivebord/downloads/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/einar/OneDrive/Skrivebord/downloads/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "besvarelse.aux" 1741599382 370 8ba84f12b5d85b9e298d768a5cb4d065 "pdflatex"
-  "besvarelse.out" 1741599382 162 9f642b9a7b077cfab624707ba4514c02 "pdflatex"
-  "besvarelse.tex" 1741599376 1204 4387b5abfd52f834bea5f7ef725be036 ""
-  "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/besvarelse.tex" 1741599376 1204 4387b5abfd52f834bea5f7ef725be036 ""
+  "besvarelse.aux" 1741601350 370 49058cba8f3ec83ed50105552347ff31 "pdflatex"
+  "besvarelse.out" 1741601350 162 9f642b9a7b077cfab624707ba4514c02 "pdflatex"
+  "besvarelse.tex" 1741601346 4451 6b015d8f00a2682a5fc7cb6a2c3de8ea ""
+  "besvarelse.toc" 1741601350 126 789d7104b6238cc6262aef13ed412fd3 "pdflatex"
+  "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/besvarelse.tex" 1741601346 4451 6b015d8f00a2682a5fc7cb6a2c3de8ea ""
   (generated)
   "besvarelse.aux"
   "besvarelse.log"
   "besvarelse.out"
   "besvarelse.pdf"
+  "besvarelse.toc"
   (rewritten before read)

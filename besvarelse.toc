@@ -1,2 +1,0 @@
-\contentsline {section}{\numberline {1}Task 1a}{2}{section.1}%
-\contentsline {section}{\numberline {2}Task 1b}{3}{section.2}%

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1741606560.5039 "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/innlevering1_latex/besvarelse.tex" "besvarelse.pdf" "besvarelse" 1741606563.71041 0
+["pdflatex"] 1741606600.49468 "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/innlevering1_latex/besvarelse.tex" "besvarelse.pdf" "besvarelse" 1741606604.61517 0
   "C:/Users/einar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1741599048 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/einar/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1741599243 14064 4f68f4ac0f56a0c15a1b171124e39a9d ""
   "C:/Users/einar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1740049333 24225046 4bb43facef80bc4c523ae950015c0e7b ""
@@ -215,11 +215,11 @@
   "C:/Users/einar/OneDrive/Skrivebord/downloads/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "C:/Users/einar/OneDrive/Skrivebord/downloads/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/einar/OneDrive/Skrivebord/downloads/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "besvarelse.aux" 1741606563 610 928b342eac3a7948f663151603fc5fc5 "pdflatex"
-  "besvarelse.out" 1741606563 403 2db2a47315ec97192d98139186f186ac "pdflatex"
-  "besvarelse.tex" 1741606560 6346 6a1429d79c0f5aa0c2ecfa482548905d ""
-  "besvarelse.toc" 1741606563 284 2b8f6d37f039b6d54fcbaf09c1e00cd4 "pdflatex"
-  "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/innlevering1_latex/besvarelse.tex" 1741606560 6346 6a1429d79c0f5aa0c2ecfa482548905d ""
+  "besvarelse.aux" 1741606603 610 928b342eac3a7948f663151603fc5fc5 "pdflatex"
+  "besvarelse.out" 1741606603 403 2db2a47315ec97192d98139186f186ac "pdflatex"
+  "besvarelse.tex" 1741606596 6348 53aa7c7a6e3bd13101cd66244126094c ""
+  "besvarelse.toc" 1741606603 284 2b8f6d37f039b6d54fcbaf09c1e00cd4 "pdflatex"
+  "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/innlevering1_latex/besvarelse.tex" 1741606596 6348 53aa7c7a6e3bd13101cd66244126094c ""
   "figurer/ER-modell.png" 1741604209 214150 7e3f24cb5acc5b4abb0d0470cd0bd1de ""
   (generated)
   "besvarelse.aux"

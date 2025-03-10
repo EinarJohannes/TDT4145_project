@@ -33,7 +33,7 @@
 %Begynnelsen av dokumentet
 \begin{document}
 \title{TDT4145, Prosjekt del 1}
-\author{Erik Dudek, Einar Rye, Ida Høyland}
+\author{Gruppe 158: Erik Dudek, Einar Rye, Ida Høyland}
 \maketitle
 
 %Innholdsfortegnelse som heter innholdsfortegnelse:
@@ -49,12 +49,11 @@
 \end{figure}
 \newpage{}
 
-\textbf{Forutsetninger}
+\subsection{Forutsetninger}
 \begin{itemize}
-\item Entiteten Fly har en unikt identifiserende nøkkelatributt RegNr og et SerieNr som kun er unik for produsenten av et fly. Derfor er SerieNr satt som en normal attributt og det forutsettes at unikheten til dette attributtet opprettholdes i implementasjonen av databasen ved en unik begrensning.  
+\item Entiteten Fly har en unikt identifiserende nøkkelatributt Regnr og et Serienr som kun er unik for produsenten av et fly. Derfor er Serienr satt som en normal attributt og det forutsettes at unikheten til dette attributtet opprettholdes i implementasjonen av databasen ved en begrensning.  
 \item Entiteten Flyplass har Flyplasskoden som primærnøkkel og Flyplassnavn som normalattributt. Sistnevnte skal være unik og må implementeres med en begrensning.
-\item Flyvning faktisk ankomst og avgang, hvordan løser vi dette?
-\item For å gjøre en billettbestilling til en flyvning må status være "planned" som vi forutsetter kan legges inn som en begrensning i oppretningen av databasen. 
+\item For å gjøre en billettbestilling til en flyvning må status være "planned" som vi forutsetter kan legges inn som en begrensning i oppretningen av databasen eller opprettholdes manuelt av databasens bruker. 
 \item Dersom en flyrute består av to eller flere delruter, kan man kjøpe delrutene for seg. Hver delrute vil da ha en pris. Prisen på hele flyruten vil være
 mindre enn summen av prisen på alle delrutene. 
 \item En billett kan gjelde for enten hele flyruten, en delrute eller flere delruter. En spesifikk billett kan ikke eksistere uten at den er kjøpt. Et setevalg må holdes unikt for en flyvning og dette må opprettholdes med en begrensning i databasen.
@@ -62,39 +61,38 @@ mindre enn summen av prisen på alle delrutene.
 
 \newpage{}
 
-\section{Oppgave 1b}
-\subsection{Tabellene}
-
+\section{Relasjonsdatabasjeskjema}
+\subsection{Tabeller}
 %Punktliste med underpunkter etter hovedpunkt:
 \begin{itemize}
 
-\item Bagasje (Registreringsnr, Billettreferanse, Vekt, Innleveringstidspunkt)
+\item Bagasje (\underline{Registreringsnr}, Billettreferanse, Vekt, Innleveringstidspunkt)
 \begin{itemize}
 \item Registreringsnr er primærnøkkel
 \item Billettreferanse er fremmednøkkel mot Billett, kan ikke være NULL
 \end{itemize}
 
-\item BenytterFlytype (FlytypeID, FLyselskapID)
+\item BenytterFlytype (\underline{FlytypeID, FlyselskapID})
 \begin{itemize}
 \item FlytypeID er fremmednøkkel mot Flytype, kan ikke være NULL
-\item FlyselskapID er fremmednøkkel mot FLytype, kan ikke være NULL
+\item FlyselskapID er fremmednøkkel mot Flytype, kan ikke være NULL
 \end{itemize}
 
-\item Billett (Referansenr, Kundenr, Løpenr, Prisklasse, Pris, Setevalg, ReiseFra, ReiseTil, Reisetype)
+\item Billett (\underline{Referansenr}, Kundenr, Løpenr, Prisklasse, Pris, Setevalg, ReiseFra, ReiseTil, Reisetype)
 \begin{itemize}
 \item Referansenr er primærnøkkel
 \item Kundenr er fremmednøkkel mot Kunde, kan ikke være NULL
-\item Løpenr er fremmednøkkel mtot Flyvning, kan være null
+\item Løpenr er fremmednøkkel mot Flyvning, kan være null
 \end{itemize}
 
-\item Delrute(DelruteID, FlyplasskodeAvgang, FlyplasskodeAnkomst, PlanlagtAvgang, PlanlagtAnkomst)
+\item Delrute(\underline{DelruteID}, FlyplasskodeAvgang, FlyplasskodeAnkomst, PlanlagtAvgang, PlanlagtAnkomst)
 \begin{itemize}
 \item DelruteID er primærnøkkel
 \item FlyplasskodeAvgang er fremmednøkkel mot Flyplass, kan ikke være NULL
-\item  FlyplasskodeAnkomst er fremmednøkkel mot Flyplass, kan ikek være NULL
+\item  FlyplasskodeAnkomst er fremmednøkkel mot Flyplass, kan ikke være NULL
 \end{itemize}
 
-\item Fly ( Regnr, FlytypeID, Produsentnavn, FlyselskapID, Serienr, Navn, ÅrSattIDrift)
+\item Fly (\underline{Regnr}, FlytypeID, Produsentnavn, FlyselskapID, Serienr, Navn, ÅrSattIDrift)
 \begin{itemize}
 \item Regnr er primærnøkkel
 \item FlytypeID er fremmednøkkel mot Flytype, kan ikke være NULL
@@ -102,59 +100,60 @@ mindre enn summen av prisen på alle delrutene.
 \item Produsentnavt er fremmednøkkel mot Produsent, kan ikke være NULL
 \end{itemize}
 
-\item Flyplass (Flyplasskode, Flyplassnavn)
+\item Flyplass (\underline{Flyplasskode}, Flyplassnavn)
 \begin{itemize}
 \item Flyplasskode er primærnøkkel
 \end{itemize}
 
-\item Flyrute ( Flyrutenr, FlytypeID, FlyselskapID, Ukedagskode)
+\item Flyrute (\underline{Flyrutenr}, FlytypeID, FlyselskapID, Ukedagskode)
 \begin{itemize}
 \item Flyrutenr er primærnøkkel
-\item FlytypeID er fremmednøkkel mot
+\item FlytypeID er fremmednøkkel mot Flytype, kan ikke være NULL
 \item FlyselskapID er fremmednøkkel mot Flyselskap, kan ikke være NULL
 \end{itemize}
 
-\item Flytype ( FlytypeID, Produsentnavn, Kabinkode, FlyselskapID, ProdusertFra, ProdusertTil)
+\item Flytype (\underline{FlytypeID}, Produsentnavn, Kabinkode, ProdusertFra, ProdusertTil)
 \begin{itemize}
 \item FlytypeID er primærnøkkel
 \item Produsentnavn er fremmednøkkel mot Produsent, kan ikke være NULL
 \item Kabinkode er fremmednøkkel mot Passasjerkabin, kan ikke være NULL
 \end{itemize}
 
-\item Flyvning (Løpenr, Status, FaktiskAvgang, FaktiskAnkomst)
+\item Flyvning (\underline{Løpenr}, Flyrutenr Status, FaktiskAvgang, FaktiskAnkomst)
 \begin{itemize}
 \item Løpenr er primærnøkkel
+\item Flyrutenr er fremmednøkkel mot Flyrute, kan ikke være NULL
 \end{itemize}
 
-\item Fordelsprogram (ReferanseID, FlyselskapID, Kundenr, Nivå)
+\item Fordelsprogram (\underline{ReferanseID}, FlyselskapID, Kundenr, Nivå)
 \begin{itemize}
 \item ReferanseID er primærnøkkel
 \item FlyselskapID er fremmednøkkel mot Flyselskap, kan ikke være NULL
-\item Kundenr er fremmednøkkel mot Kunde, kan ikke være NULL
+\item Kundenr er fremmednøkkel mot Kunde, kan være NULL
 \end{itemize}
 
-\item HarDelrute (DelruteID, Flyrutenr)
+\item HarDelrute (\underline{DelruteID, Flyrutenr})
 \begin{itemize}
 \item DelruteID er fremmednøkkel mot Delrute
 \item Flyrutenr er fremmednøkkel mot Flyrute
 \end{itemize}
 
-\item Kunde (Kundenr, Navn, Tlf, Epost, Nasjonalitet, Innsjekkingstidspunkt)
+\item Kunde (\underline{Kundenr}, Navn, Tlf, Epost, Nasjonalitet, Innsjekkingstidspunkt)
 \begin{itemize}
 \item Kundenr er primærnøkkel
 \end{itemize}
 
-\item Passasjerkabin (Kabinkode)
+\item Passasjerkabin (\underline{Kabinkode})
 \begin{itemize}
 \item Kabinkode er er primærnøkkel
 \end{itemize}
 
-\item Produsent (Produsentvnanv, Nasjonalitet, Stiftet)
+\item Produsent (\underline{Produsentnavn}, Nasjonalitet, Stiftet)
 \begin{itemize}
 \item Produsentnavn er primærnøkkel
 \end{itemize}
 
-\item Seterad (Setekonfigurasjon, Radnr, Kabinkode, Merknad)
+\item Seterad (\underline{Setekonfigurasjon, Radnr, Kabinkode, Merknad})
 \begin{itemize}
 \item Setekonfigurasjon, Radnr er delvis nøkkel
 \item Kabinkode, Setekonfigurasjon, Radnr utgjør primærnøkkel

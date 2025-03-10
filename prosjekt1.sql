@@ -70,18 +70,19 @@ CREATE TABLE IF NOT EXISTS "Flyrute" (
 	"FlyselskapID"	INTEGER NOT NULL,
 	"Ukedagskode"	INTEGER NOT NULL,
 	PRIMARY KEY("Flyrutenr"),
-	FOREIGN KEY("FlytypeID") REFERENCES "Flytype"("FlytypeID")
+	FOREIGN KEY("FlytypeID") REFERENCES "Flytype"("FlytypeID"),
+	FOREIGN KEY("FlyselskapID") REFERENCES "Flyselskap"("FlyselskapID")
 );
 
 CREATE TABLE IF NOT EXISTS "Flytype" (
 	"FlytypeID"	INTEGER,
 	"Produsentnavn"	TEXT NOT NULL,
 	"Kabinkode"	INTEGER NOT NULL,
-	"FlyselskapID"	INTEGER NOT NULL,
 	"ProdusertFra"	INTEGER NOT NULL,
 	"ProdusertTil"	INTEGER,
 	PRIMARY KEY("FlytypeID"),
 	FOREIGN KEY("Kabinkode") REFERENCES "Passasjerkabin"("Kabinkode")
+	FOREIGN KEY("Produsentnavn") REFERENCES "Produsent"("Produsentnavn")
 );
 
 CREATE TABLE IF NOT EXISTS "Flyvning" (
@@ -111,16 +112,6 @@ CREATE TABLE IF NOT EXISTS "HarDelrute" (
 	FOREIGN KEY("DelruteID") REFERENCES "Delrute"("DelruteID"),
 	FOREIGN KEY("Flyrutenr") REFERENCES "Flyrute"("Flyrutenr")
 );
-
--- Med siste endringer behøves ikke denne tabellen
--- CREATE TABLE IF NOT EXISTS "HarRader" (
---	"Kabinkode"	INTEGER NOT NULL,
---	"Setekonfigurasjon"	TEXT NOT NULL,
---	"Radnummer"	TEXT NOT NULL,
---	PRIMARY KEY("Kabinkode","Setekonfigurasjon","Radnummer"),
---	FOREIGN KEY("Kabinkode") REFERENCES "Passasjerkabin"("Kabinkode")
---	FOREIGN KEY("Setekonfigurasjon") REFERENCES "Seterad"("Setekonfigurasjon")
---);
 
 CREATE TABLE IF NOT EXISTS "Kunde" (
 	"Kundenr"	INTEGER,

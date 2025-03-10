@@ -32,12 +32,13 @@
 
 %Begynnelsen av dokumentet
 \begin{document}
-\title{TDT4145, Project Part 1}
+\title{TDT4145, Prosjekt del 1}
 \author{Erik Dudek, Einar Rye, Ida Høyland}
 \maketitle
 
-%Innholdsfortegnelse:
-\tableofcontents{}
+%Innholdsfortegnelse som heter innholdsfortegnelse:
+\tableofcontents
+
 
 \newpage{}
 
@@ -72,7 +73,7 @@ mindre enn summen av prisen på alle delrutene.
 \item Billettreferanse er fremmednøkkel mot Billett, kan ikke være NULL
 \end{itemize}
 
-\item Bagasje (FlytypeID, FLyselskapID)
+\item BenytterFlytype (FlytypeID, FLyselskapID)
 \begin{itemize}
 \item FlytypeID er fremmednøkkel mot Flytype, kan ikke være NULL
 \item FlyselskapID er fremmednøkkel mot FLytype, kan ikke være NULL
@@ -100,7 +101,7 @@ mindre enn summen av prisen på alle delrutene.
 \item Produsentnavt er fremmednøkkel mot Produsent, kan ikke være NULL
 \end{itemize}
 
-\item Flyplass (Plyplasskode, Flyplassnavn)
+\item Flyplass (Flyplasskode, Flyplassnavn)
 \begin{itemize}
 \item Flyplasskode er primærnøkkel
 \end{itemize}
@@ -117,6 +118,8 @@ mindre enn summen av prisen på alle delrutene.
 \item FlytypeID er primærnøkkel
 \item Produsentnavn er fremmednøkkel mot Produsent, kan ikke være NULL
 \item Kabinkode er fremmednøkkel mot Passasjerkabin, kan ikke være NULL
+%Manglet vi denne?
+\item FlyselskapID er fremmednøkkel mot Flyselskap, kan ikke være NULL
 \end{itemize}
 
 \item Flyvning (Løpenr, Status, FaktiskAvgang, FaktiskAnkomst)
@@ -155,8 +158,8 @@ mindre enn summen av prisen på alle delrutene.
 \item Seterad (Setekonfigurasjon, Radnr, Kabinkode, Merknad)
 \begin{itemize}
 \item Setekonfigurasjon, Radnr er delvis nøkkel
-\item kabinkode, Setekonfigurasjon, Radnr utgjør primærnøkkel
-\item kabinkode er fremmednøkkel mot Passasjerkabin 
+\item Kabinkode, Setekonfigurasjon, Radnr utgjør primærnøkkel
+\item Kabinkode er fremmednøkkel mot Passasjerkabin 
 \end{itemize}
 
 \end{itemize}

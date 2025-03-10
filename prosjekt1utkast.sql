@@ -1,5 +1,7 @@
 BEGIN TRANSACTION;
 
+PRAGMA foreign_keys = ON;
+
 CREATE TABLE IF NOT EXISTS "Bagasje" (
 	"Registreringsnr"	INTEGER,
 	"Billettreferanse"	TEXT NOT NULL,

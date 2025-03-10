@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1741609774 "d:/_ntnu/TDT4145_project/innlevering1_latex/besvarelse.tex" "besvarelse.pdf" "besvarelse" 1741609776 0
-  "besvarelse.aux" 1741609776 1234 201615c69c9c6d97850c57489506145e "pdflatex"
-  "besvarelse.out" 1741609776 592 09e3cbfcbcd9319d0fa849a9c9d7ba56 "pdflatex"
-  "besvarelse.tex" 1741609772 6792 77a3f822734184e761686ef629da9e57 ""
-  "besvarelse.toc" 1741609776 405 b0d3fd064b8353862254a2847d656936 "pdflatex"
+["pdflatex"] 1741610012 "d:/_ntnu/TDT4145_project/innlevering1_latex/besvarelse.tex" "besvarelse.pdf" "besvarelse" 1741610014 0
+  "besvarelse.aux" 1741610013 1234 201615c69c9c6d97850c57489506145e "pdflatex"
+  "besvarelse.out" 1741610013 592 09e3cbfcbcd9319d0fa849a9c9d7ba56 "pdflatex"
+  "besvarelse.tex" 1741610011 6792 503198ce1489a30eff5faea1622463cc ""
+  "besvarelse.toc" 1741610013 405 b0d3fd064b8353862254a2847d656936 "pdflatex"
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1694510469 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1694511119 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1694510842 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -233,7 +233,7 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1694513911 4633008 0d2be68ed55386ec3de2ec7ccf960230 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1694514193 7445762 f3a6d466a4dae9b11005e6e1b0795342 ""
   "c:/texlive/2023/texmf.cnf" 1694513882 713 e69b156964470283e0530f5060668171 ""
-  "d:/_ntnu/TDT4145_project/innlevering1_latex/besvarelse.tex" 1741609772 6792 77a3f822734184e761686ef629da9e57 ""
+  "d:/_ntnu/TDT4145_project/innlevering1_latex/besvarelse.tex" 1741610011 6792 503198ce1489a30eff5faea1622463cc ""
   "figurer/ER-modell.png" 1741601701 214150 7e3f24cb5acc5b4abb0d0470cd0bd1de ""
   (generated)
   "besvarelse.aux"

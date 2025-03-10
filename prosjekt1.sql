@@ -40,8 +40,8 @@ CREATE TABLE IF NOT EXISTS "Delrute" (
 	"PlanlagtAvgang"	DATETIME NOT NULL,
 	"PlanlagtAnkomst"	DATETIME NOT NULL,
 	PRIMARY KEY("DelruteID"),
-	FOREIGN KEY("FlyplasskodeAvgang") REFERENCES "Flyplass"("FlyplasskodeAvgang"),
-	FOREIGN KEY("FlyplasskodeAnkomst") REFERENCES "Flyplass"("FlyplasskodeAnkomst")
+	FOREIGN KEY("FlyplasskodeAvgang") REFERENCES "Flyplass"("Flyplasskode"),
+	FOREIGN KEY("FlyplasskodeAnkomst") REFERENCES "Flyplass"("Flyplasskode")
 );
 
 CREATE TABLE IF NOT EXISTS "Fly" (
@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS "Flytype" (
 CREATE TABLE IF NOT EXISTS "Flyvning" (
 	"Løpenr"	TEXT,
 	"Flyrutenr"	INTEGER NOT NULL,
-	"Status"	TEXT NOT NULL,
+    "Status" TEXT NOT NULL CHECK("Status" IN ('planned', 'active', 'completed', 'cancelled')),
 	"FaktiskAvgang"	DATETIME,
 	"FaktiskAnkomst"	DATETIME,
 	PRIMARY KEY("Løpenr"),

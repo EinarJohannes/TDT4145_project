@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS "BenytterFlytype" (
 );
 
 CREATE TABLE IF NOT EXISTS "Billett" (
-	"Referansenr"	INTEGER,
+	"Referansenr"	TEXT,
 	"Kundenr"	INTEGER NOT NULL,
 	"Løpenr"	INTEGER NOT NULL,
 	"Prisklasse"	TEXT NOT NULL,
@@ -33,8 +33,8 @@ CREATE TABLE IF NOT EXISTS "Billett" (
 
 CREATE TABLE IF NOT EXISTS "Delrute" (
 	"DelruteID"	INTEGER,
-	"FlyplasskodeAvgang"	DATETIME,
-	"FlyplasskodeAnkomst"	DATETIME,
+	"FlyplasskodeAvgang"	TEXT NOT NULL,
+	"FlyplasskodeAnkomst"	TEXT NOT NULL,
 	"PlanlagtAvgang"	DATETIME NOT NULL,
 	"PlanlagtAnkomst"	DATETIME NOT NULL,
 	PRIMARY KEY("DelruteID"),
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS "Fly" (
 );
 
 CREATE TABLE IF NOT EXISTS "Flyplass" (
-	"Flyplasskode"	INTEGER,
+	"Flyplasskode"	TEXT,
 	"Flyplassnavn"	TEXT NOT NULL UNIQUE,
 	PRIMARY KEY("Flyplasskode")
 );

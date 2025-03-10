@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.20)  10 MAR 2025 10:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.20)  10 MAR 2025 11:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -787,14 +787,38 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
  (C:\Users\einar\OneDrive\Skrivebord\downloads\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) (besvarelse.toc)
+\tf@toc=\write5
+\openout5 = `besvarelse.toc'.
+
+ [1
+
+{C:/Users/einar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+Overfull \hbox (3.01674pt too wide) in paragraph at lines 56--57
+[]\OT1/cmr/m/n/12 Billettreferanse er fremmedn^^\kkel mot Bil-lett, kan ikke v^^Zre NULL 
+ []
+
+
+Overfull \hbox (2.41963pt too wide) in paragraph at lines 62--63
+[]\OT1/cmr/m/n/12 FlyselskapID er fremmedn^^\kkel mot FLy-type, kan ikke v^^Zre NULL 
+ []
+
+
+Overfull \hbox (1.64598pt too wide) in paragraph at lines 65--67
+[]\OT1/cmr/m/n/12 Billett (Refer-ansenr, Kun-denr, L^^\penr, Prisklasse, Pris, Sete-valg, Reise-
+ []
+
+[3]
+Overfull \hbox (8.00421pt too wide) in paragraph at lines 124--126
+[]\OT1/cmr/m/n/12 Kunde (Kun-denr, Navn, Tlf, Epost, Nasjon-alitet, Innsjekkingstid-spunkt) 
+ []
+
+[4]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 27.
 See the caption package documentation for explanation.
 
-[1
-
-{C:/Users/einar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (besvarelse.aux)
+[5] (besvarelse.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -803,17 +827,17 @@ Package rerunfilecheck Info: File `besvarelse.out' has not changed.
 (rerunfilecheck)             Checksum: 9F642B9A7B077CFAB624707BA4514C02;162.
  ) 
 Here is how much of TeX's memory you used:
- 35981 strings out of 474486
- 829087 string characters out of 5743755
- 1930542 words of memory out of 5000000
- 57710 multiletter control sequences out of 15000+600000
+ 35994 strings out of 474486
+ 829301 string characters out of 5743755
+ 1934542 words of memory out of 5000000
+ 57715 multiletter control sequences out of 15000+600000
  562515 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,93p,801b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,6n,93p,801b,653s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\einar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on besvarelse.pdf (1 page, 39074 bytes).
+Output written on besvarelse.pdf (5 pages, 49271 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
+ 64 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 

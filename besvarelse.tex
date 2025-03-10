@@ -1,4 +1,4 @@
-%Neccesary code to begin document:
+%"Nødvendige pakker" (copilot fiksa):
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -30,26 +30,119 @@
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 
-%start of document
+%Begynnelsen av dokumentet
 \begin{document}
 \title{TDT4145, Project Part 1}
 \author{Erik Dudek, Einar Rye, Ida Høyland}
 \maketitle
+
+%Innholdsfortegnelse:
+\tableofcontents{}
+
+\newpage{}
+
 \section{Task 1a}
+
+\newpage{}
+
 \section{Task 1b}
 
 %Punktliste med underpunkter etter hovedpunkt:
 \begin{itemize}
-\item First item
+
+\item Bagasje (Registreringsnr, Billettreferanse, Vekt, Innleveringstidspunkt)
 \begin{itemize}
-\item First subitem
-\item Second subitem
-\item Third subitem
-\end{itemize}
-\item Second item
-\item Third item
-\item Fourth item
+\item Registreringsnr er primærnøkkel
+\item Billettreferanse er fremmednøkkel mot Billett, kan ikke være NULL
 \end{itemize}
 
-%dokumentet avsluttes
+\item Bagasje (FlytypeID, FLyselskapID)
+\begin{itemize}
+\item FlytypeID er fremmednøkkel mot Flytype, kan ikke være NULL
+\item FlyselskapID er fremmednøkkel mot FLytype, kan ikke være NULL
+\end{itemize}
+
+\item Billett (Referansenr, Kundenr, Løpenr, Prisklasse, Pris, Setevalg, ReiseFra, ReiseTil, Reisetype)
+\begin{itemize}
+\item Referansenr er primærnøkkel
+\item Kundenr er fremmednøkkel mot Kunde, kan ikke være NULL
+\item Løpenr er fremmednøkkel mtot Flyvning, kan være null
+\end{itemize}
+
+\item Delrute(DelruteID, FlyplasskodeAvgang, FlyplasskodeAnkomst, PlanlagtAvgang, PlanlagtAnkomst)
+\begin{itemize}
+\item DelruteID er primærnøkkel
+\item FlyplasskodeAvgang er fremmednøkkel mot Flyplass, kan ikke være NULL
+\item  FlyplasskodeAnkomst er fremmednøkkel mot Flyplass, kan ikek være NULL
+\end{itemize}
+
+\item Fly ( Regnr, FlytypeID, Produsentnavn, FlyselskapID, Serienr, Navn, ÅrSattIDrift)
+\begin{itemize}
+\item Regnr er primærnøkkel
+\item FlytypeID er fremmednøkkel mot Flytype, kan ikke være NULL
+\item FlyselskapID er fremmednøkkel mot Flyselskap, kan ikke være NULL
+\item Produsentnavt er fremmednøkkel mot Produsent, kan ikke være NULL
+\end{itemize}
+
+\item Flyplass (Plyplasskode, Flyplassnavn)
+\begin{itemize}
+\item Flyplasskode er primærnøkkel
+\end{itemize}
+
+\item Flyrute ( Flyrutenr, FlytypeID, FlyselskapID, Ukedagskode)
+\begin{itemize}
+\item Flyrutenr er primærnøkkel
+\item FlytypeID er fremmednøkkel mot
+\item FlyselskapID er fremmednøkkel mot Flyselskap, kan ikke være NULL
+\end{itemize}
+
+\item Flytype ( FlytypeID, Produsentnavn, Kabinkode, FlyselskapID, ProdusertFra, ProdusertTil)
+\begin{itemize}
+\item FlytypeID er primærnøkkel
+\item Produsentnavn er fremmednøkkel mot Produsent, kan ikke være NULL
+\item Kabinkode er fremmednøkkel mot Passasjerkabin, kan ikke være NULL
+\end{itemize}
+
+\item Flyvning (Løpenr, Status, FaktiskAvgang, FaktiskAnkomst)
+\begin{itemize}
+\item Løpenr er primærnøkkel
+\end{itemize}
+
+\item Fordelsprogram (ReferanseID, FlyselskapID, Kundenr, Nivå)
+\begin{itemize}
+\item ReferanseID er primærnøkkel
+\item FlyselskapID er fremmednøkkel mot Flyselskap, kan ikke være NULL
+\item Kundenr er fremmednøkkel mot Kunde, kan ikke være NULL
+\end{itemize}
+
+\item HarDelrute (DelruteID, Flyrutenr)
+\begin{itemize}
+\item DelruteID er fremmednøkkel mot Delrute
+\item Flyrutenr er fremmednøkkel mot Flyrute
+\end{itemize}
+
+\item Kunde (Kundenr, Navn, Tlf, Epost, Nasjonalitet, Innsjekkingstidspunkt)
+\begin{itemize}
+\item Kundenr er primærnøkkel
+\end{itemize}
+
+\item Passasjerkabin (Kabinkode)
+\begin{itemize}
+\item Kabinkode er er primærnøkkel
+\end{itemize}
+
+\item Produsent (Produsentvnanv, Nasjonalitet, Stiftet)
+\begin{itemize}
+\item Produsentnavn er primærnøkkel
+\end{itemize}
+
+\item Seterad (Setekonfigurasjon, Radnr, Kabinkode, Merknad)
+\begin{itemize}
+\item Setekonfigurasjon, Radnr er delvis nøkkel
+\item kabinkode, Setekonfigurasjon, Radnr utgjør primærnøkkel
+\item kabinkode er fremmednøkkel mot Passasjerkabin 
+\end{itemize}
+
+\end{itemize}
+
 \end{document}

@@ -1,7 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1741599050.46063 "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/besvarelse.tex" "besvarelse.pdf" "besvarelse" 1741599054.4207 0
+["pdflatex"] 1741599379.73355 "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/besvarelse.tex" "besvarelse.pdf" "besvarelse" 1741599382.7959 0
   "C:/Users/einar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1741599048 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+  "C:/Users/einar/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1741599243 14064 4f68f4ac0f56a0c15a1b171124e39a9d ""
   "C:/Users/einar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1740049333 24225046 4bb43facef80bc4c523ae950015c0e7b ""
+  "C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233951854 928 2dc8d444221b7a635bb58038579b861a ""
@@ -204,10 +206,10 @@
   "C:/Users/einar/OneDrive/Skrivebord/downloads/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "C:/Users/einar/OneDrive/Skrivebord/downloads/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/einar/OneDrive/Skrivebord/downloads/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "besvarelse.aux" 1741599053 265 bb5bd6fff8b025703c6253c0045d5d4d "pdflatex"
-  "besvarelse.out" 1741599053 76 809a8b231f3aef0ba76bf671c1af3769 "pdflatex"
-  "besvarelse.tex" 1741598537 911 fca748d9a82858c02c7f29778b589677 ""
-  "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/besvarelse.tex" 1741598537 911 fca748d9a82858c02c7f29778b589677 ""
+  "besvarelse.aux" 1741599382 370 8ba84f12b5d85b9e298d768a5cb4d065 "pdflatex"
+  "besvarelse.out" 1741599382 162 9f642b9a7b077cfab624707ba4514c02 "pdflatex"
+  "besvarelse.tex" 1741599376 1204 4387b5abfd52f834bea5f7ef725be036 ""
+  "c:/Users/einar/OneDrive - NTNU/Vår 2025/Databaser/TDT4145_project/besvarelse.tex" 1741599376 1204 4387b5abfd52f834bea5f7ef725be036 ""
   (generated)
   "besvarelse.aux"
   "besvarelse.log"

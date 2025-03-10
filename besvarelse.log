@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.20)  10 MAR 2025 10:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.20)  10 MAR 2025 10:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,20 +800,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `besvarelse.out' has not changed.
-(rerunfilecheck)             Checksum: 809A8B231F3AEF0BA76BF671C1AF3769;76.
+(rerunfilecheck)             Checksum: 9F642B9A7B077CFAB624707BA4514C02;162.
  ) 
 Here is how much of TeX's memory you used:
- 35972 strings out of 474486
- 828935 string characters out of 5743755
- 1927542 words of memory out of 5000000
- 57703 multiletter control sequences out of 15000+600000
- 561871 words of font info for 51 fonts, out of 8000000 for 9000
+ 35981 strings out of 474486
+ 829087 string characters out of 5743755
+ 1930542 words of memory out of 5000000
+ 57710 multiletter control sequences out of 15000+600000
+ 562515 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,6n,93p,801b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on besvarelse.pdf (1 page, 35906 bytes).
+ <C:\Users\einar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/einar/OneDrive/Skrivebord/downloads/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on besvarelse.pdf (1 page, 39074 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.12)  10 MAR 2025 13:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.12)  10 MAR 2025 13:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(c:/texlive/2023/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(c:/texlive/2023/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -808,27 +808,51 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<figurer/ER-modell.png, id=41, 1440.38126pt x 1418.29875pt>
+<figurer/ER-modell.png, id=43, 1440.38126pt x 1418.29875pt>
 File: figurer/ER-modell.png Graphic file (type png)
 <use figurer/ER-modell.png>
-Package pdftex.def Info: figurer/ER-modell.png  used on input line 49.
+Package pdftex.def Info: figurer/ER-modell.png  used on input line 48.
 (pdftex.def)             Requested size: 537.75343pt x 529.50182pt.
  [2 <./figurer/ER-modell.png>] [3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (2.75694pt too wide) in paragraph at lines 73--74
-[]\OT1/cmr/m/n/12 Billettreferanse er frem-medn^^\kkel mot Bil-lett, kan ikke v^^Z-re NULL 
+Overfull \hbox (2.66212pt too wide) in paragraph at lines 69--71
+[]\OT1/cmr/m/n/10.95 Bagasje ($[]$, Bil-lett-re-fe-ran-se, Vekt, Inn-le-ve-rings-tids-punkt) 
+ []
+
+
+Overfull \hbox (6.18806pt too wide) in paragraph at lines 72--73
+[]\OT1/cmr/m/n/10.95 Billettreferanse er frem-medn^^\kkel mot Bil-lett, kan ikke v^^Z-re NULL 
+ []
+
+
+Overfull \hbox (1.77644pt too wide) in paragraph at lines 78--79
+[]\OT1/cmr/m/n/10.95 FlyselskapID er frem-medn^^\kkel mot Fly-type, kan ikke v^^Z-re NULL 
+ []
+
+
+Overfull \hbox (19.1212pt too wide) in paragraph at lines 81--83
+[]\OT1/cmr/m/n/10.95 Billett ($[]$, Kun-denr, L^^\penr, Pris-klas-se, Pris, Sete-valg, [],
+ []
+
+
+Overfull \hbox (54.03596pt too wide) in paragraph at lines 88--90
+[]\OT1/cmr/m/n/10.95 Delrute($[]$, Fly-plass-kode-Av-gang, Fly-plass-kode-An-komst, [],
+ []
+
+
+Overfull \hbox (34.72256pt too wide) in paragraph at lines 115--117
+[]\OT1/cmr/m/n/10.95 Flytype ($[]$, Pro-du-sent-navn, Ka-bin-kode, Pro-du-sert-Fra, []) 
  []
 
 [4]
-Overfull \hbox (6.70523pt too wide) in paragraph at lines 142--144
-[]\OT1/cmr/m/n/12 Kunde ($[]$, Navn, Tlf, Epost, Na-sjo-na-li-tet, Inn-sjek-kings-tids-punkt) 
+Overfull \hbox (9.75172pt too wide) in paragraph at lines 141--143
+[]\OT1/cmr/m/n/10.95 Kunde ($[]$, Navn, Tlf, Epost, Na-sjo-na-li-tet, []) 
  []
 
-[5]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 28.
 See the caption package documentation for explanation.
 
-[6] (./besvarelse.aux)
+[5] (./besvarelse.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -837,18 +861,18 @@ Package rerunfilecheck Info: File `besvarelse.out' has not changed.
 (rerunfilecheck)             Checksum: 09E3CBFCBCD9319D0FA849A9C9D7BA56;592.
  ) 
 Here is how much of TeX's memory you used:
- 37060 strings out of 476253
- 838697 string characters out of 5791586
- 1928801 words of memory out of 5000000
- 57806 multiletter control sequences out of 15000+600000
- 567169 words of font info for 71 fonts, out of 8000000 for 9000
+ 37057 strings out of 476253
+ 838738 string characters out of 5791586
+ 1930801 words of memory out of 5000000
+ 57803 multiletter control sequences out of 15000+600000
+ 566122 words of font info for 66 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
- 84i,7n,89p,776b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on besvarelse.pdf (6 pages, 142584 bytes).
+ 84i,7n,89p,776b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on besvarelse.pdf (5 pages, 171572 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

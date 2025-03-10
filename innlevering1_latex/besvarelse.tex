@@ -1,5 +1,5 @@
 %"Nødvendige pakker" (copilot fiksa):
-\documentclass[a4paper,12pt, norsk]{article}
+\documentclass[a4paper,11pt, norsk]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[norsk]{babel}
 \usepackage{amsmath}
@@ -40,7 +40,6 @@
 %Innholdsfortegnelse som heter innholdsfortegnelse:
 \tableofcontents
 
-
 \newpage{}
 
 \section{ER-modell}
@@ -51,10 +50,10 @@
 \newpage{}
 
 \subsection{Forutsetninger}
-\begin{itemize}
-\item Entiteten Fly har en unikt identifiserende nøkkelatributt Regnr og et Serienr som kun er unik for produsenten av et fly. Derfor er Serienr satt som en normal attributt og det forutsettes at unikheten til dette attributtet opprettholdes i implementasjonen av databasen ved en begrensning.  
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+\item Entiteten Fly har en unikt identifiserende nøkkelatributt Regnr og et Serienr som kun er unik for produsenten av et fly. Derfor er \mbox{Serienr} satt som en normal attributt og det forutsettes at unikheten til \mbox{dette} attributtet opprettholdes i implementasjonen av databasen ved en \mbox{begrensning}.  
 \item Entiteten Flyplass har Flyplasskoden som primærnøkkel og Flyplassnavn som normalattributt. Sistnevnte skal være unik og må implementeres med en begrensning.
-\item For å gjøre en billettbestilling til en flyvning må status være "planned" som vi forutsetter kan legges inn som en begrensning i oppretningen av databasen eller opprettholdes manuelt av databasens bruker. 
+\item For å gjøre en billettbestilling til en flyvning må status være 'planned' som vi forutsetter kan legges inn som en begrensning i oppretningen av databasen eller opprettholdes manuelt av databasens bruker. 
 \item Dersom en flyrute består av to eller flere delruter, kan man kjøpe delrutene for seg. Hver delrute vil da ha en pris. Prisen på hele flyruten vil være
 mindre enn summen av prisen på alle delrutene. 
 \item En billett kan gjelde for enten hele flyruten, en delrute eller flere delruter. En spesifikk billett kan ikke eksistere uten at den er kjøpt. Et setevalg må holdes unikt for en flyvning og dette må opprettholdes med en begrensning i databasen.
@@ -65,7 +64,7 @@ mindre enn summen av prisen på alle delrutene.
 \section{Relasjonsdatabasjeskjema}
 \subsection{Tabeller}
 %Punktliste med underpunkter etter hovedpunkt:
-\begin{itemize}
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
 
 \item Bagasje (\underline{Registreringsnr}, Billettreferanse, Vekt, Innleveringstidspunkt)
 \begin{itemize}
@@ -79,14 +78,14 @@ mindre enn summen av prisen på alle delrutene.
 \item FlyselskapID er fremmednøkkel mot Flytype, kan ikke være NULL
 \end{itemize}
 
-\item Billett (\underline{Referansenr}, Kundenr, Løpenr, Prisklasse, Pris, Setevalg, ReiseFra, ReiseTil, Reisetype)
+\item Billett (\underline{Referansenr}, Kundenr, Løpenr, Prisklasse, Pris, Setevalg, \mbox{ReiseFra}, ReiseTil, Reisetype)
 \begin{itemize}
 \item Referansenr er primærnøkkel
 \item Kundenr er fremmednøkkel mot Kunde, kan ikke være NULL
 \item Løpenr er fremmednøkkel mot Flyvning, kan være null
 \end{itemize}
 
-\item Delrute(\underline{DelruteID}, FlyplasskodeAvgang, FlyplasskodeAnkomst, PlanlagtAvgang, PlanlagtAnkomst)
+\item Delrute(\underline{DelruteID}, FlyplasskodeAvgang, FlyplasskodeAnkomst, \mbox{PlanlagtAvgang}, PlanlagtAnkomst)
 \begin{itemize}
 \item DelruteID er primærnøkkel
 \item FlyplasskodeAvgang er fremmednøkkel mot Flyplass, kan ikke være NULL
@@ -113,7 +112,7 @@ mindre enn summen av prisen på alle delrutene.
 \item FlyselskapID er fremmednøkkel mot Flyselskap, kan ikke være NULL
 \end{itemize}
 
-\item Flytype (\underline{FlytypeID}, Produsentnavn, Kabinkode, ProdusertFra, ProdusertTil)
+\item Flytype (\underline{FlytypeID}, Produsentnavn, Kabinkode, ProdusertFra, \mbox{ProdusertTil})
 \begin{itemize}
 \item FlytypeID er primærnøkkel
 \item Produsentnavn er fremmednøkkel mot Produsent, kan ikke være NULL
@@ -139,7 +138,7 @@ mindre enn summen av prisen på alle delrutene.
 \item Flyrutenr er fremmednøkkel mot Flyrute
 \end{itemize}
 
-\item Kunde (\underline{Kundenr}, Navn, Tlf, Epost, Nasjonalitet, Innsjekkingstidspunkt)
+\item Kunde (\underline{Kundenr}, Navn, Tlf, Epost, Nasjonalitet, \mbox{Innsjekkingstidspunkt})
 \begin{itemize}
 \item Kundenr er primærnøkkel
 \end{itemize}
@@ -165,10 +164,6 @@ mindre enn summen av prisen på alle delrutene.
 
 \subsection{Normalformer}
 Alle tabellene er i fjerde normalform (4FN) siden det ikke finnes
-multiverdige avhengigheter i noen av tabellene. Det fremkommer fra definisjonene
-av normalformer, at dersom en tabell er i 4NF, så er den også i 3NF, 2NF og 1NF.
-Det er fordi kriteriene som ligger til grunn for normalform $n$, kan betraktes
-som en delmengde av kriteriene for normalform $(n-1), (n-2), \ldots, 1, \quad \forall
-n \in \{2,3,4\}$
+multiverdige avhengigheter i noen av tabellene. Det fremkommer fra definisjonene av normalformer, at dersom en tabell er i 4NF, så er den også i 3NF, 2NF og 1NF. Det er fordi kriteriene som ligger til grunn for normalform $n$, kan betraktes som en delmengde av kriteriene for normalform $(n-1), (n-2), \ldots, 1, \quad \forall \quad n \in \{2,3,4\}$.
 
 \end{document}

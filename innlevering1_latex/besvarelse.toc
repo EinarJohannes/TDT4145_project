@@ -3,4 +3,4 @@
 \contentsline {subsection}{\numberline {1.1}Forutsetninger}{3}{subsection.1.1}%
 \contentsline {section}{\numberline {2}Relasjonsdatabasjeskjema}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Tabeller}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Normalformer}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Normalformer}{5}{subsection.2.2}%
